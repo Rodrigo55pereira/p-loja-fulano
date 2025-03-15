@@ -43,12 +43,12 @@ const s = StyleSheet.create({
     width: 200,
     height: 200,
     // backgroundColor: 'red',
-    marginBottom: 20,
+    marginBottom: 40,
   },
   h1: {
     fontSize: 22,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginBottom: 20,
   },
   h2: {
     fontSize: 16,
