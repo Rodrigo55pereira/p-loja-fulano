@@ -61,4 +61,4 @@ Este projeto é **open-source** e está sob a licença **MIT**.
 
 ---
 
-📌 **Criado por [Seu Nome](https://github.com/seu-usuario/)** 🚀
+📌 **Criado por [Rodrigo Pereira de Moraes](https://github.com/Rodrigo55pereira/)** 🚀
