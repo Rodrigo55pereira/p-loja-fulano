@@ -26,7 +26,7 @@ const Screen = () => {
         <Text style={s.title}>{product.title}</Text>
         <Text style={s.description}>{product.description}</Text>
         <View style={s.priceArea}>
-            <Text style={s.price}>R$ {product.price.toFixed(2)}</Text>
+          <Text style={s.price}>R$ {product.price.toFixed(2)}</Text>
         </View>
       </ScrollView>
       <View style={s.buttonArea}>
@@ -61,17 +61,18 @@ const s = StyleSheet.create({
   },
   description: {
     fontSize: 15,
-    color: '#555555',
-    marginBottom: 20
+    color: "#555555",
+    marginBottom: 20,
   },
   priceArea: {
-    padding:10,
+    padding: 10,
     borderRadius: 10,
-    backgroundColor: '#CCCCCC',
+    backgroundColor: "#CCCCCC",
   },
   price: {
-
-  }
+    fontSize: 22,
+    textAlign: "center",
+  },
 });
 
 export default Screen;
