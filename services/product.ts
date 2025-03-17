@@ -9,5 +9,5 @@ export const getProductById = (id: number) => {
 }
 
 export const getProductByCategory = (idCategory: number) => {
-    return data.products.find(item => item.idCategory === idCategory)
+    return data.products.filter(item => item.idCategory === idCategory)
 }

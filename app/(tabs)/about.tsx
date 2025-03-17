@@ -20,6 +20,7 @@ const s = StyleSheet.create({
         alignItems: "center",
     },
     img_perfil: {
+        backgroundColor: "#E1E1E1",
         borderRadius: 100,
         width: 200,
         height: 200,

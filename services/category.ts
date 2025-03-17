@@ -5,5 +5,5 @@ export const getAllCategory = () => {
 }
 
 export const getCategoryById = (id: number) => {
-    data.categories.find(item => item.id === id)
+    return data.categories.find(item => item.id === id)
 }
