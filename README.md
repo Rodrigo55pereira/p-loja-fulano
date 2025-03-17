@@ -7,21 +7,29 @@ Bem-vindo ao **Meu Projeto**, um aplicativo desenvolvido com **React Native** ut
 - **React Native** - Desenvolvimento mobile
 - **Expo** - Framework para facilitar o desenvolvimento
 - **Expo Router** - Sistema de navegação baseado em arquivos
+- **React Native Safe Area Context** - Gerenciamento de áreas seguras
+- **React Native Screens** - Otimização de telas
+- **Expo Linking** - Manipulação de links
+- **Expo Constants** - Acesso a constantes nativas
 
-## 📁 Estrutura de Navegação
+## 💁️‍♂️ Estrutura de Navegação
 
 O projeto segue a seguinte estrutura utilizando `expo-router`:
 
 ```
-📦 app
- ┣ 📜 index.tsx  # Página inicial (Stack principal)
- ┣ 📂 (tabs)      # Tabs principais
- ┃ ┣ 📜 inicio.tsx  # Página de Início
- ┃ ┣ 📂 categorias  # Stack de categorias
- ┃ ┃ ┣ 📜 index.tsx  # Listagem de categorias
- ┃ ┃ ┗ 📜 [id].tsx  # Listagem de produtos de UMA categoria
- ┃ ┗ 📜 sobre.tsx  # Página "Sobre mim"
- ┗ 📜 produto.tsx  # Página de um produto único
+📺 app
+ └── 📂 (tabs)      # Navegação principal em abas
+     ├── 📄 _layout.tsx  # Layout das abas
+     ├── 📄 about.tsx  # Página "Sobre"
+     ├── 📂 categories  # Stack de categorias
+     │   ├── 📄 _layout.tsx  # Layout de categorias
+     │   ├── 📄 list.tsx  # Listagem de categorias
+     │   └── 📄 [id].tsx  # Produtos de uma categoria específica
+     ├── 📄 home.tsx  # Página inicial
+ ├── 📄 _layout.tsx  # Layout principal
+ ├── 📄 index.tsx  # Página inicial do Stack principal
+ └── 📂 product  # Detalhes de um produto
+     └── 📄 [id].tsx  # Detalhes de um produto específico
 ```
 
 ## 🚀 Como Executar o Projeto
@@ -47,12 +55,29 @@ $ npx expo start
 
 Agora é só escanear o QR Code com o **Expo Go** ou rodar no emulador! 🚀
 
-## 🛠 Configuração Adicional
+## 🛠 Bibliotecas Utilizadas
 
-Caso utilize **TypeScript**, lembre-se de instalar as tipagens adequadas:
+A seguir, as bibliotecas utilizadas no projeto, conforme `package.json`:
 
-```sh
-$ npm install --save-dev @types/react @types/react-native
+```json
+{
+  "dependencies": {
+    "expo": "~52.0.38",
+    "expo-status-bar": "~2.0.1",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "expo-router": "~4.0.19",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "expo-linking": "~7.0.5",
+    "expo-constants": "~17.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
+  }
+}
 ```
 
 ## 📝 Licença
